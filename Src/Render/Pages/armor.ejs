@@ -1,0 +1,18 @@
+<div class="d-flex w-75 m-auto px-5 text-white flex-wrap justify-content-center" style="background-color:rgba(0, 0, 0, 0.708)">
+    <% for(var i=0; i<jobs.length; i++) {%>
+          <div class="d-flex col-md-4 flex-column align-items-center">
+            <img class="w-50" src=<%= jobs[i].image %> alt="Image">
+            <div class="d-flex flex-column align-items-center">
+              <div><p><%= jobs[i].name %></p></div>
+              <p class="text-center">
+                <%= jobs[i].description %>
+              </p>
+            </div>
+            <div>
+              <span>#photography</span>
+              <span>#travel</span>
+              <span>#winter</span>
+            </div>
+          </div>
+    <% } %>
+</div>
