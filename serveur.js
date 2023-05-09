@@ -36,6 +36,9 @@ app
   .use("/armor", listArmor)
   .use("/users", UserRoute)
   .use("/chat", SocketRoute)
+  .get("*",(req, res, next) => {
+    res.send("Page non Trouvé Error 404")
+  })
 
 server.listen(8080, () => {
   console.log("Server is running");
